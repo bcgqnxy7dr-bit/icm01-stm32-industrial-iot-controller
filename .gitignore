@@ -1,0 +1,58 @@
+# Local downloads and isolated IDE workspace
+.cache/
+.metadata/
+firmware/**/.settings/language.settings.xml
+
+# Build directories and generated output
+Debug/
+Release/
+build/
+Build/
+*.elf
+*.map
+*.list
+*.o
+*.obj
+*.a
+*.d
+*.su
+*.cyclo
+*.bin
+*.hex
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Raw local diagnostics may contain device identifiers or local paths
+docs/test_reports/dev01_logs/
+docs/test_reports/*.log
+
+# Local configuration and credentials; keep secrets out of source as well
+.env
+.env.*
+!.env.example
+!.env.sample
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_ed25519
+*private_key*
+*api_key*
+*wifi_password*
+
+# IDE/editor temporary files
+*.tmp
+*.bak
+*.ioc.bak
+*_save
+*~
+firmware/**/MXTmpFiles/

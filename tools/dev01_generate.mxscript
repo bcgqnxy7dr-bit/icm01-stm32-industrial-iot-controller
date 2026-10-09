@@ -1,0 +1,3 @@
+config load firmware/icm01_stm32/icm01_stm32.ioc
+project generate
+exit
