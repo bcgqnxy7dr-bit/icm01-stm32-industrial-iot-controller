@@ -1,6 +1,6 @@
 # ICM-01
 
-学习 STM32 产品研发流程的嵌入式项目。当前仅完成 DEV-01：STM32F103C8T6 最小 HAL 工程生成与 Debug 首次构建，没有业务功能。
+学习 STM32 产品研发流程的嵌入式项目。当前已完成 DEV-01 最小 HAL 工程构建和 DEV-02 下载、复位、运行与源码调试闭环，没有业务功能。
 
 - 目标：STM32F103C8T6，Flash 64 KB，RAM 20 KB。
 - 工程：firmware/icm01_stm32；CubeMX 6.11.1 生成，CubeIDE 2.2.0 构建。
@@ -42,4 +42,6 @@ python .\tools\verify_dev01.py
 
 本机固定固件包在 C:\Users\Administrator\STM32Cube\Repository\STM32Cube_FW_F1_V1.8.5，来源为 [ST 官方 v1.8.5 标签](https://github.com/STMicroelectronics/STM32CubeF1/tree/v1.8.5)。没有安装或升级其他固件包。
 
-本任务没有下载至 MCU。等待导师明确安排下一任务。
+DEV-02 已完成目标下载与源码调试；结果见 [调试链报告](docs/test_reports/stm32_debug_chain_2026-10-09.md)。
+
+可复现源码调试入口：tools/debug_stm32.ps1（会复位目标；不自动烧录，须确保板上固件与本地 Debug ELF 一致）。等待导师明确安排下一任务。
